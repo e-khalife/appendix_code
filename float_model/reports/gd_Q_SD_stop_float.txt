@@ -1,0 +1,348 @@
+[kernel] Parsing gd_Q_SD_stop_float.c (with preprocessing)
+[kernel:parser:decimal-float] gd_Q_SD_stop_float.c:39: Warning: 
+  Floating-point constant 3.09e-06 is not represented exactly. Will use 0x1.9ebb977049942p-19.
+  (warn-once: no further messages from category 'parser:decimal-float' will be emitted)
+[wp] Running WP plugin...
+[rte:annot] annotating function gd_Q
+[wp] Computing [100 goals...]
+[wp] 142 goals scheduled
+[wp] Warning: Missing script(s) for prover Coq 9.1.1.
+  Use -wp-interactive=fix for interactive proving.
+[wp] Proved goals:  144 / 144
+  Terminating:       1
+  Unreachable:       1
+  Qed:              74 (0.51ms-17ms-88ms)
+  Alt-Ergo 2.5.4:   13 (22ms-617ms-3.7s)
+  CVC5 1.2.0:       44 (5ms-79ms-552ms)
+  Coq 9.1.1:         6 (256ms-419ms)
+  Z3 4.8.12:         5 (29ms-50ms-107ms)
+[wp] 6 goals scheduled
+[wp] [Unknown] typed_real_lemma_N_sufficient_float (Coq)
+[wp] [Unknown] typed_real_lemma_grad_diag (Coq)
+[wp] [Unknown] typed_real_lemma_eigerr_linear (Coq)
+[wp] [Unknown] typed_real_lemma_isometry (Coq)
+[wp] [Unknown] typed_real_lemma_coord_sq_le_total (Coq)
+[wp] [Unknown] typed_real_lemma_isometry_grad (Coq)
+[wp] Proved goals:    0 / 6
+  Qed:             0
+  Unknown:         6
+[wp] 6 goals scheduled
+[wp] Proved goals:    6 / 6
+  Qed:             0 (0.60ms-0.22ms-0.74ms)
+  Coq 9.1.1:       6 (246ms-404ms)
+[wp] 6 goals scheduled
+[wp] [Unknown] typed_real_lemma_N_sufficient_float (Coq)
+[wp] [Unknown] typed_real_lemma_grad_diag (Coq)
+[wp] [Unknown] typed_real_lemma_eigerr_linear (Coq)
+[wp] [Unknown] typed_real_lemma_isometry (Coq)
+[wp] [Unknown] typed_real_lemma_coord_sq_le_total (Coq)
+[wp] [Unknown] typed_real_lemma_isometry_grad (Coq)
+[wp] Proved goals:    0 / 6
+  Qed:             0
+  Unknown:         6
+[wp] 6 goals scheduled
+[wp] Proved goals:    6 / 6
+  Qed:             0 (0.19ms)
+  Coq 9.1.1:       6 (253ms-416ms)
+[report] Computing properties status...
+--------------------------------------------------------------------------------
+--- Global Properties
+--------------------------------------------------------------------------------
+
+[  Valid  ] Axiomatic 'Conditions'
+            by Frama-C kernel.
+[  Valid  ] Axiomatic 'Glue'
+            by Frama-C kernel.
+[  Valid  ] Axiomatic 'Lemmas'
+            by Frama-C kernel.
+[  Valid  ] Axiomatic 'NumericLemmas'
+            by Frama-C kernel.
+[  Valid  ] Axiomatic 'Spectral'
+            by Frama-C kernel.
+[  Valid  ] Axiomatic 'StepSums'
+            by Frama-C kernel.
+[  Valid  ] Axiomatic 'Sums'
+            by Frama-C kernel.
+[  Valid  ] Axiomatic 'Vec'
+            by Frama-C kernel.
+[  Valid  ] Lemma 'ALPHA_admissible'
+            by Wp.typed_real (v1).
+[ Extern  ] Axiom 'ColOrth_base'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'ColOrth_step'
+            Unverifiable but considered Valid.
+[  Valid  ] Lemma 'DELTA_admissible'
+            by Wp.typed_real (v1).
+[  Valid  ] Lemma 'EPS_sufficient_float'
+            by Wp.typed_real (v1).
+[ Extern  ] Axiom 'EigErrSq_base'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'EigErrSq_step'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'EigErr_base'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'EigErr_step'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'EigGradSq_base'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'EigGradSq_step'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'EigGrad_base'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'EigGrad_step'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'ErrSq_base'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'ErrSq_step'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'GradSq_base'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'GradSq_step'
+            Unverifiable but considered Valid.
+[  Valid  ] Lemma 'N_sufficient_float'
+            by Wp.typed_real (v1).
+            by Wp.typed_real (v3).
+[  Valid  ] Lemma 'RHO_admissible'
+            by Wp.typed_real (v1).
+[  Valid  ] Lemma 'Rhat_0'
+            by Wp.typed_real (v1).
+[  Valid  ] Lemma 'Rhat_step'
+            by Wp.typed_real (v1).
+[ Extern  ] Axiom 'RowDot_base'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'RowDot_step'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'RowOrth_base'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'RowOrth_step'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'SpecSum_base'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'SpecSum_step'
+            Unverifiable but considered Valid.
+[  Valid  ] Lemma 'budget_exact'
+            by Wp.typed_real (v1).
+[  Valid  ] Lemma 'budget_nonneg'
+            by Wp.typed_real (v1).
+[  Valid  ] Lemma 'coord_grad_bound'
+            by Wp.typed_real (v1).
+[  Valid  ] Lemma 'coord_sq_le_total'
+            by Wp.typed_real (v1).
+            by Wp.typed_real (v3).
+[  Valid  ] Lemma 'coord_step_bound'
+            by Wp.typed_real (v1).
+[  Valid  ] Lemma 'eigerr_linear'
+            by Wp.typed_real (v1).
+            by Wp.typed_real (v3).
+[  Valid  ] Lemma 'grad_diag'
+            by Wp.typed_real (v1).
+            by Wp.typed_real (v3).
+[  Valid  ] Lemma 'isometry'
+            by Wp.typed_real (v1).
+            by Wp.typed_real (v3).
+[  Valid  ] Lemma 'isometry_grad'
+            by Wp.typed_real (v1).
+            by Wp.typed_real (v3).
+[  Valid  ] Lemma 'sq_from_abs'
+            by Wp.typed_real (v1).
+[  Valid  ] Lemma 'sq_from_scaled_abs'
+            by Wp.typed_real (v1).
+[  Valid  ] Lemma 'sqrtd_pos'
+            by Wp.typed_real (v1).
+[  Valid  ] Lemma 'sqrtd_sq'
+            by Wp.typed_real (v1).
+[ Extern  ] Axiom 'vec_of_get'
+            Unverifiable but considered Valid.
+
+--------------------------------------------------------------------------------
+--- Properties of Function 'gd_Q'
+--------------------------------------------------------------------------------
+
+[  Valid  ] Post-condition 'converged'
+            by Wp.typed_real (v1).
+[  Valid  ] Exit-condition (generated)
+            by Unreachable Annotations.
+[  Valid  ] Termination-condition (generated)
+            by Trivial Termination.
+[  Valid  ] Loop assigns (file gd_Q_SD_stop_float.c, line 51)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop assigns (file gd_Q_SD_stop_float.c, line 59)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop assigns (file gd_Q_SD_stop_float.c, line 66)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop assigns (file gd_Q_SD_stop_float.c, line 84)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop assigns (file gd_Q_SD_stop_float.c, line 118)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop assigns (file gd_Q_SD_stop_float.c, line 150)
+            by Wp.typed_real (v1).
+[  Valid  ] Assigns (file gd_Q_SD_stop_float.c, line 33)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop variant at loop (file gd_Q_SD_stop_float.c, line 54)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop variant at loop (file gd_Q_SD_stop_float.c, line 62)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop variant at loop (file gd_Q_SD_stop_float.c, line 69)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop variant at loop (file gd_Q_SD_stop_float.c, line 87)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop variant at loop (file gd_Q_SD_stop_float.c, line 121)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop variant at loop (file gd_Q_SD_stop_float.c, line 153)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'range' (file gd_Q_SD_stop_float.c, line 40)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'decay_float' (file gd_Q_SD_stop_float.c, line 42)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'first' (file gd_Q_SD_stop_float.c, line 45)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'stop_float' (file gd_Q_SD_stop_float.c, line 48)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'range' (file gd_Q_SD_stop_float.c, line 56)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'gradient' (file gd_Q_SD_stop_float.c, line 57)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'range' (file gd_Q_SD_stop_float.c, line 64)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'accumulator' (file gd_Q_SD_stop_float.c, line 65)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'unchangedQ' (file gd_Q_SD_stop_float.c, line 70)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'unchangedx' (file gd_Q_SD_stop_float.c, line 71)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'range' (file gd_Q_SD_stop_float.c, line 78)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'done' (file gd_Q_SD_stop_float.c, line 79)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'todo' (file gd_Q_SD_stop_float.c, line 80)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'kept' (file gd_Q_SD_stop_float.c, line 81)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'step_norm' (file gd_Q_SD_stop_float.c, line 83)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'unchangedg' (file gd_Q_SD_stop_float.c, line 88)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'grad_eig' (file gd_Q_SD_stop_float.c, line 95)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'update_eig' (file gd_Q_SD_stop_float.c, line 97)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'coord_step' (file gd_Q_SD_stop_float.c, line 99)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'coord_shrink' (file gd_Q_SD_stop_float.c, line 101)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'decay_next_float' (file gd_Q_SD_stop_float.c, line 103)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'coord_grad_eig' (file gd_Q_SD_stop_float.c, line 107)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'coord_grad' (file gd_Q_SD_stop_float.c, line 108)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'coord_stop' (file gd_Q_SD_stop_float.c, line 109)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'coord_stop_sq' (file gd_Q_SD_stop_float.c, line 111)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'range' (file gd_Q_SD_stop_float.c, line 116)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'stop_sum' (file gd_Q_SD_stop_float.c, line 117)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'stop_unfold_err' (file gd_Q_SD_stop_float.c, line 122)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'stop_unfold_grad' (file gd_Q_SD_stop_float.c, line 123)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'ts_is_d' (file gd_Q_SD_stop_float.c, line 125)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'stop_eig' (file gd_Q_SD_stop_float.c, line 126)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'stop_iso_err' (file gd_Q_SD_stop_float.c, line 130)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'stop_iso_grad' (file gd_Q_SD_stop_float.c, line 131)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'stop_step' (file gd_Q_SD_stop_float.c, line 132)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'stop_next' (file gd_Q_SD_stop_float.c, line 133)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'stop_next_float' (file gd_Q_SD_stop_float.c, line 136)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'final_coord' (file gd_Q_SD_stop_float.c, line 146)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'range' (file gd_Q_SD_stop_float.c, line 147)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'agg_coord' (file gd_Q_SD_stop_float.c, line 148)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'agg_sum' (file gd_Q_SD_stop_float.c, line 149)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'agg_sq_coord' (file gd_Q_SD_stop_float.c, line 154)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'agg_unfold' (file gd_Q_SD_stop_float.c, line 155)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'tg_is_d' (file gd_Q_SD_stop_float.c, line 157)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'agg_exit' (file gd_Q_SD_stop_float.c, line 158)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'eig_total' (file gd_Q_SD_stop_float.c, line 159)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'err_total' (file gd_Q_SD_stop_float.c, line 160)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'early' (file gd_Q_SD_stop_float.c, line 163)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_SD_stop_float.c, line 39)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_SD_stop_float.c, line 39)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_SD_stop_float.c, line 54)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_SD_stop_float.c, line 63)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_SD_stop_float.c, line 72)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_SD_stop_float.c, line 72)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_SD_stop_float.c, line 72)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_SD_stop_float.c, line 72)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_SD_stop_float.c, line 72)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_SD_stop_float.c, line 72)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_SD_stop_float.c, line 72)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_SD_stop_float.c, line 72)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_SD_stop_float.c, line 69)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_SD_stop_float.c, line 74)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_SD_stop_float.c, line 62)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_SD_stop_float.c, line 89)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_SD_stop_float.c, line 89)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_SD_stop_float.c, line 90)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_SD_stop_float.c, line 90)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_SD_stop_float.c, line 90)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_SD_stop_float.c, line 91)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_SD_stop_float.c, line 91)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_SD_stop_float.c, line 87)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_SD_stop_float.c, line 121)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_SD_stop_float.c, line 137)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_SD_stop_float.c, line 153)
+            by Wp.typed_real (v1).
+[  Valid  ] Default behavior
+            by Frama-C kernel.
+
+--------------------------------------------------------------------------------
+--- Status Report Summary
+--------------------------------------------------------------------------------
+   118 Completely validated
+    21 Considered valid
+   139 Total
+--------------------------------------------------------------------------------

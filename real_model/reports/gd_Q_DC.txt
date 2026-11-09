@@ -1,0 +1,184 @@
+[kernel] Parsing gd_Q_DC.c (with preprocessing)
+[kernel:parser:decimal-float] gd_Q_DC.c:79: Warning: 
+  Floating-point constant 0.027398 is not represented exactly. Will use 0x1.c0e38a7e73a36p-6.
+  (warn-once: no further messages from category 'parser:decimal-float' will be emitted)
+[wp] Running WP plugin...
+[rte:annot] annotating function gd_Q
+[wp] 68 goals scheduled
+[wp] Warning: Missing script(s) for prover Coq 9.1.1.
+  Use -wp-interactive=fix for interactive proving.
+[wp] Proved goals:   70 / 70
+  Terminating:       1
+  Unreachable:       1
+  Qed:              44 (4ms-8ms-34ms)
+  Alt-Ergo 2.5.4:    3 (27ms-70ms-131ms)
+  CVC5 1.2.0:       19 (15ms-194ms-1.2s)
+  Coq 9.1.1:         2 (182ms-480ms)
+[wp] 2 goals scheduled
+[wp] [Unknown] typed_real_lemma_contraction (Coq)
+[wp] [Unknown] typed_real_lemma_N_sufficient (Coq)
+[wp] Proved goals:    0 / 2
+  Qed:             0
+  Unknown:         2
+[wp] 2 goals scheduled
+[wp] Proved goals:    2 / 2
+  Qed:             0
+  Coq 9.1.1:       2 (153ms-439ms)
+[wp] 2 goals scheduled
+[wp] [Unknown] typed_real_lemma_contraction (Coq)
+[wp] [Unknown] typed_real_lemma_N_sufficient (Coq)
+[wp] Proved goals:    0 / 2
+  Qed:             0
+  Unknown:         2
+[wp] 2 goals scheduled
+[wp] Proved goals:    2 / 2
+  Qed:             0
+  Coq 9.1.1:       2 (164ms-440ms)
+[report] Computing properties status...
+--------------------------------------------------------------------------------
+--- Global Properties
+--------------------------------------------------------------------------------
+
+[  Valid  ] Axiomatic 'Conditions'
+            by Frama-C kernel.
+[  Valid  ] Axiomatic 'Glue'
+            by Frama-C kernel.
+[  Valid  ] Axiomatic 'Lemmas'
+            by Frama-C kernel.
+[  Valid  ] Axiomatic 'Problem'
+            by Frama-C kernel.
+[  Valid  ] Axiomatic 'Sums'
+            by Frama-C kernel.
+[  Valid  ] Axiomatic 'Vec'
+            by Frama-C kernel.
+[  Valid  ] Lemma 'ALPHA_admissible'
+            by Wp.typed_real (v1).
+[ Extern  ] Axiom 'ErrQ_base'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'ErrQ_step'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'ErrSq_base'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'ErrSq_step'
+            Unverifiable but considered Valid.
+[  Valid  ] Lemma 'N_sufficient'
+            by Wp.typed_real (v1).
+            by Wp.typed_real (v3).
+[  Valid  ] Lemma 'RHO_admissible'
+            by Wp.typed_real (v1).
+[ Extern  ] Axiom 'RowDot_base'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'RowDot_step'
+            Unverifiable but considered Valid.
+[  Valid  ] Lemma 'contraction'
+            by Wp.typed_real (v1).
+            by Wp.typed_real (v3).
+[ Extern  ] Axiom 'vec_of_get'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'vlin_get'
+            Unverifiable but considered Valid.
+
+--------------------------------------------------------------------------------
+--- Properties of Function 'gd_Q'
+--------------------------------------------------------------------------------
+
+[  Valid  ] Post-condition 'converged'
+            by Wp.typed_real (v1).
+[  Valid  ] Exit-condition (generated)
+            by Unreachable Annotations.
+[  Valid  ] Termination-condition (generated)
+            by Trivial Termination.
+[  Valid  ] Loop assigns (file gd_Q_DC.c, line 47)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop assigns (file gd_Q_DC.c, line 55)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop assigns (file gd_Q_DC.c, line 62)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop assigns (file gd_Q_DC.c, line 75)
+            by Wp.typed_real (v1).
+[  Valid  ] Assigns (file gd_Q_DC.c, line 38)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop variant at loop (file gd_Q_DC.c, line 50)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop variant at loop (file gd_Q_DC.c, line 58)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop variant at loop (file gd_Q_DC.c, line 65)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop variant at loop (file gd_Q_DC.c, line 78)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'range' (file gd_Q_DC.c, line 44)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'decay' (file gd_Q_DC.c, line 46)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'range' (file gd_Q_DC.c, line 52)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'gradient' (file gd_Q_DC.c, line 53)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'range' (file gd_Q_DC.c, line 60)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'accumulator' (file gd_Q_DC.c, line 61)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'unchangedQ' (file gd_Q_DC.c, line 66)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'unchangedx' (file gd_Q_DC.c, line 67)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'range' (file gd_Q_DC.c, line 72)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'done' (file gd_Q_DC.c, line 73)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'todo' (file gd_Q_DC.c, line 74)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'step' (file gd_Q_DC.c, line 82)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'contract' (file gd_Q_DC.c, line 83)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'decay_next' (file gd_Q_DC.c, line 84)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_DC.c, line 59)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_DC.c, line 68)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_DC.c, line 68)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_DC.c, line 68)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_DC.c, line 68)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_DC.c, line 68)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_DC.c, line 68)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_DC.c, line 68)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_DC.c, line 68)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_DC.c, line 65)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_DC.c, line 70)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_DC.c, line 58)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_DC.c, line 79)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_DC.c, line 79)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_DC.c, line 79)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_DC.c, line 79)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_DC.c, line 79)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_DC.c, line 78)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_DC.c, line 50)
+            by Wp.typed_real (v1).
+[  Valid  ] Default behavior
+            by Frama-C kernel.
+
+--------------------------------------------------------------------------------
+--- Status Report Summary
+--------------------------------------------------------------------------------
+    56 Completely validated
+     8 Considered valid
+    64 Total
+--------------------------------------------------------------------------------

@@ -1,0 +1,232 @@
+[kernel] Parsing gd_Q_DC_stop_float.c (with preprocessing)
+[kernel:parser:decimal-float] gd_Q_DC_stop_float.c:40: Warning: 
+  Floating-point constant 3.09e-06 is not represented exactly. Will use 0x1.9ebb977049942p-19.
+  (warn-once: no further messages from category 'parser:decimal-float' will be emitted)
+[wp] Running WP plugin...
+[rte:annot] annotating function gd_Q
+[wp] 95 goals scheduled
+[wp] Warning: Missing script(s) for prover Coq 9.1.1.
+  Use -wp-interactive=fix for interactive proving.
+[wp] Proved goals:   97 / 97
+  Terminating:       1
+  Unreachable:       1
+  Qed:              54 (4ms-13ms-77ms)
+  Alt-Ergo 2.5.4:    5 (19ms-96ms-227ms)
+  CVC5 1.2.0:       34 (3ms-129ms-1.2s)
+  Coq 9.1.1:         2 (443ms-516ms)
+[wp] 3 goals scheduled
+[wp] [Unknown] typed_real_lemma_contraction (Coq)
+[wp] [Unknown] typed_real_lemma_step_lower (Coq)
+[wp] [Unknown] typed_real_lemma_N_sufficient_float (Coq)
+[wp] Proved goals:    0 / 3
+  Qed:             0
+  Unknown:         3
+[wp] Computing [95 goals...]
+[wp] 3 goals scheduled
+[wp] Proved goals:    3 / 3
+  Qed:             0 (0.31ms)
+  Coq 9.1.1:       3 (184ms-477ms)
+[wp] 3 goals scheduled
+[wp] [Unknown] typed_real_lemma_contraction (Coq)
+[wp] [Unknown] typed_real_lemma_step_lower (Coq)
+[wp] [Unknown] typed_real_lemma_N_sufficient_float (Coq)
+[wp] Proved goals:    0 / 3
+  Qed:             0
+  Unknown:         3
+[wp] 3 goals scheduled
+[wp] Proved goals:    3 / 3
+  Qed:             0
+  Coq 9.1.1:       3 (189ms-473ms)
+[report] Computing properties status...
+--------------------------------------------------------------------------------
+--- Global Properties
+--------------------------------------------------------------------------------
+
+[  Valid  ] Axiomatic 'Conditions'
+            by Frama-C kernel.
+[  Valid  ] Axiomatic 'Glue'
+            by Frama-C kernel.
+[  Valid  ] Axiomatic 'Lemmas'
+            by Frama-C kernel.
+[  Valid  ] Axiomatic 'Problem'
+            by Frama-C kernel.
+[  Valid  ] Axiomatic 'Sums'
+            by Frama-C kernel.
+[  Valid  ] Axiomatic 'Vec'
+            by Frama-C kernel.
+[  Valid  ] Lemma 'ALPHA_admissible'
+            by Wp.typed_real (v1).
+[  Valid  ] Lemma 'DELTA_admissible'
+            by Wp.typed_real (v1).
+[  Valid  ] Lemma 'EPS_sufficient_float'
+            by Wp.typed_real (v1).
+[ Extern  ] Axiom 'ErrQ_base'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'ErrQ_step'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'ErrSq_base'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'ErrSq_step'
+            Unverifiable but considered Valid.
+[  Valid  ] Lemma 'N_sufficient_float'
+            by Wp.typed_real (v1).
+            by Wp.typed_real (v3).
+[  Valid  ] Lemma 'RHO_admissible'
+            by Wp.typed_real (v1).
+[  Valid  ] Lemma 'Rhat_0'
+            by Wp.typed_real (v1).
+[  Valid  ] Lemma 'Rhat_step'
+            by Wp.typed_real (v1).
+[ Extern  ] Axiom 'RowDot_base'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'RowDot_step'
+            Unverifiable but considered Valid.
+[  Valid  ] Lemma 'contraction'
+            by Wp.typed_real (v1).
+            by Wp.typed_real (v3).
+[  Valid  ] Lemma 'step_lower'
+            by Wp.typed_real (v1).
+            by Wp.typed_real (v3).
+[ Extern  ] Axiom 'vec_of_get'
+            Unverifiable but considered Valid.
+[ Extern  ] Axiom 'vlin_get'
+            Unverifiable but considered Valid.
+
+--------------------------------------------------------------------------------
+--- Properties of Function 'gd_Q'
+--------------------------------------------------------------------------------
+
+[  Valid  ] Post-condition 'converged'
+            by Wp.typed_real (v1).
+[  Valid  ] Exit-condition (generated)
+            by Unreachable Annotations.
+[  Valid  ] Termination-condition (generated)
+            by Trivial Termination.
+[  Valid  ] Loop assigns (file gd_Q_DC_stop_float.c, line 53)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop assigns (file gd_Q_DC_stop_float.c, line 61)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop assigns (file gd_Q_DC_stop_float.c, line 68)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop assigns (file gd_Q_DC_stop_float.c, line 87)
+            by Wp.typed_real (v1).
+[  Valid  ] Assigns (file gd_Q_DC_stop_float.c, line 34)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop variant at loop (file gd_Q_DC_stop_float.c, line 56)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop variant at loop (file gd_Q_DC_stop_float.c, line 64)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop variant at loop (file gd_Q_DC_stop_float.c, line 71)
+            by Wp.typed_real (v1).
+[  Valid  ] Loop variant at loop (file gd_Q_DC_stop_float.c, line 90)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'range' (file gd_Q_DC_stop_float.c, line 41)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'Rhat_range' (file gd_Q_DC_stop_float.c, line 43)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'decay_float' (file gd_Q_DC_stop_float.c, line 45)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'first' (file gd_Q_DC_stop_float.c, line 47)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'stop_float' (file gd_Q_DC_stop_float.c, line 50)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'range' (file gd_Q_DC_stop_float.c, line 58)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'gradient' (file gd_Q_DC_stop_float.c, line 59)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'range' (file gd_Q_DC_stop_float.c, line 66)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'accumulator' (file gd_Q_DC_stop_float.c, line 67)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'unchangedQ' (file gd_Q_DC_stop_float.c, line 72)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'unchangedx' (file gd_Q_DC_stop_float.c, line 73)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'gradient_vec' (file gd_Q_DC_stop_float.c, line 80)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'range' (file gd_Q_DC_stop_float.c, line 82)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'done' (file gd_Q_DC_stop_float.c, line 83)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'todo' (file gd_Q_DC_stop_float.c, line 84)
+            by Wp.typed_real (v1).
+[  Valid  ] Invariant 'step_norm' (file gd_Q_DC_stop_float.c, line 86)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'unchangedg' (file gd_Q_DC_stop_float.c, line 91)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'step' (file gd_Q_DC_stop_float.c, line 98)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'contract' (file gd_Q_DC_stop_float.c, line 99)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'decay_next_float' (file gd_Q_DC_stop_float.c, line 101)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'step_total' (file gd_Q_DC_stop_float.c, line 104)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'step_low' (file gd_Q_DC_stop_float.c, line 105)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'stop_next' (file gd_Q_DC_stop_float.c, line 106)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'stop_next_float' (file gd_Q_DC_stop_float.c, line 109)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'cap_float' (file gd_Q_DC_stop_float.c, line 116)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'exits' (file gd_Q_DC_stop_float.c, line 117)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_DC_stop_float.c, line 40)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_DC_stop_float.c, line 40)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_DC_stop_float.c, line 56)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_DC_stop_float.c, line 65)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_DC_stop_float.c, line 74)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_DC_stop_float.c, line 74)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_DC_stop_float.c, line 74)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_DC_stop_float.c, line 74)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_DC_stop_float.c, line 74)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_DC_stop_float.c, line 74)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_DC_stop_float.c, line 74)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_DC_stop_float.c, line 74)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_DC_stop_float.c, line 71)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_DC_stop_float.c, line 76)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_DC_stop_float.c, line 64)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_DC_stop_float.c, line 92)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_DC_stop_float.c, line 92)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_DC_stop_float.c, line 93)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,mem_access' (file gd_Q_DC_stop_float.c, line 93)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_DC_stop_float.c, line 93)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_DC_stop_float.c, line 94)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,is_nan_or_infinite' (file gd_Q_DC_stop_float.c, line 94)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_DC_stop_float.c, line 90)
+            by Wp.typed_real (v1).
+[  Valid  ] Assertion 'rte,signed_overflow' (file gd_Q_DC_stop_float.c, line 110)
+            by Wp.typed_real (v1).
+[  Valid  ] Default behavior
+            by Frama-C kernel.
+
+--------------------------------------------------------------------------------
+--- Status Report Summary
+--------------------------------------------------------------------------------
+    78 Completely validated
+     8 Considered valid
+    86 Total
+--------------------------------------------------------------------------------
